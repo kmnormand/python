@@ -13,12 +13,10 @@ for role in my_roles:
     if role not in role_list:
         not_found.append(role)
     else:
-        print("Role exists for {}".format(role))
+        print(f"Role exists for {role}")
 
 print(not_found)
 
 no_role = [role for role in my_roles if role not in role_list]
 
 print(no_role)
-
-# print(role_id)
