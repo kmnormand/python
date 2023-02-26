@@ -17,8 +17,6 @@ for user in response['UserDetailList']:
     username = user['UserName']
     if user.get("AttachedManagedPolicies"):
         user_dict[username].append(user.get("AttachedManagedPolicies"))
-    else:
-        print("Empty Managed Policy")
 
 print(user_dict)
 group_list = [x['GroupName'] for x in response['GroupDetailList']]
