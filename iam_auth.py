@@ -1,5 +1,5 @@
-import boto3
 from collections import defaultdict
+import boto3
 
 user_list = group_list = []
 user_dict = defaultdict(list)

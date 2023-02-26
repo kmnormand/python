@@ -20,4 +20,5 @@ for group in my_group_names:
         else:
             print("No subscription filters")
     except:
-        print("No subscription for {}".format(group))
+        print(f"No subscription for {group}")
+        
